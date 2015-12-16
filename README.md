@@ -1,2 +1,2 @@
 # ExpressionTemplates
-Expression templates examples
+Expression template examples
