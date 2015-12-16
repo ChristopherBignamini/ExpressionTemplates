@@ -5,6 +5,7 @@
 template<typename Expr>
 double evaluate(Expr i_expr,const double i_value)
 {
+    // TODO: avoid local object creation
     typename ExprTraits<Expr>::expr_type expr(i_expr);
     return expr(i_value);
 }
