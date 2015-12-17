@@ -1,13 +1,12 @@
 #pragma once
 
+#include "DBinExprOp.hpp"
+#include "DApDiv.hpp"
 #include "DExpr.hpp"
-#include "DBinExprOperator.hpp"
-#include "DApDivide.hpp"
 
-template<typename A, typename B>
-DExpr< DBinExprOperator<A,B,DApDivide> >
-operator/(const DExpr<A>& i_a, const DExpr<B>& i_b)
+template<typename ExprA, typename ExprB>
+DExpr<DBinExprOp<ExprA,ExprB,DApDiv> > operator/(ExprA i_a, ExprB i_b)
 {
-  typedef DBinExprOp<DExpr<A>,DExpr<B>,DApDivide> ExprT;
-  return DExpr<ExprT>(ExprT(i_a,i_b));
+    typedef DBinExprOp<ExprA,ExprB,DApDiv> ExprT;
+    return DExpr<ExprT>(ExprT(i_a,i_b));
 }
