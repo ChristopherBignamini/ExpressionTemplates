@@ -1,5 +1,8 @@
 #pragma once
 
+namespace ET
+{
+    
 class DExprLiteral
 {
 public:
@@ -14,3 +17,5 @@ private:
   const double const_val_;
 
 };
+
+}

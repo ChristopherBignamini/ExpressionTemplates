@@ -2,6 +2,9 @@
 #include "DExpr.hpp"
 #include "ExprTraits.hpp"
 
+namespace ET
+{
+
 template<typename Expr>
 double evaluate(Expr i_expr,const double i_value)
 {
@@ -19,4 +22,6 @@ void evaluate(Expr i_expr,const double i_rangeStart, const double i_rangeStop)
         std::cout<<evaluate(i_expr,val)<<std::endl;
     
     return;
+}
+    
 }

@@ -2,6 +2,9 @@
 
 #include "ExprTraits.hpp"
 
+namespace ET
+{
+
 template <typename ExprA, typename ExprB, typename Op>
 class DBinExprOp
 {
@@ -21,3 +24,5 @@ private:
     typename ExprTraits<ExprB>::expr_type b_;
     
 };
+
+}

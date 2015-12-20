@@ -1,5 +1,8 @@
 #pragma once
 
+namespace ET
+{
+
 template <typename Expression>
 class DExpr
 {
@@ -17,3 +20,5 @@ public:
 private:
   Expression expr_;
 };
+
+}

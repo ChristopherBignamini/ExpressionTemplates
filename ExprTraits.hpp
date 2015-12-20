@@ -3,6 +3,9 @@
 #include "DExpr.hpp"
 #include "DExprLiteral.hpp"
 
+namespace ET
+{
+
 template <typename ExprT>
 struct ExprTraits
 {
@@ -14,3 +17,5 @@ struct ExprTraits<double>
 {
   typedef DExpr<DExprLiteral> expr_type;
 };
+
+}
